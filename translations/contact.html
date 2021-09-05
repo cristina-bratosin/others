@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ro-RO">
+
+<head>
+<title> Contact | EN-RO Translations </title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="apple-mobile-web-app-capable"content="yes">
+<meta name="description" content="Pentru orice traducere sau informatie despre traduceri, trimite un email la hello@translations.ro sau scrie un mesaj direct pe site.">
+<meta property="og:title" content="Contact | EN-RO Translations">
+<meta property="og:type" content="website">
+<meta property="og:description" content="Pentru orice traducere sau informatie despre traduceri, trimite un email la hello@translations.ro sau scrie un mesaj direct pe site.">
+<meta property="og:url" content="">
+<meta property="og:site_name" content="EN-RO Translations">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<link rel="stylesheet" href="style.css" />
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="jquery-1.4.2.js"></script>
+<script src="jcarousellite_1.0.1.js"></script>
+<script src="jquery.easing.1.1.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<header>
+
+ <a href="index.html"><img src="images/translations.png" alt="logo" /></a>
+ 
+ <nav id="menu">
+	<li><a href="index.html">Home</a></li>
+	<li><a href="traduceri.html">Traduceri</a></li>
+	<li><a href="despre-noi.html">Despre noi</a></li>
+	<li><a href="portofoliu.html">Portofoliu</a></li>
+	<li><a href="contact.html">Contact</a></li>
+ </nav>
+  </div>
+  
+ <div id="menu-mobile">
+  <label for="mmenu"><img src="images/menu.png" /></label> 
+  <input type="checkbox" id="mmenu" /> 
+  <ul>
+	<a href="index.html"><li>Home</li></a>
+	<a href="traduceri.html"><li>Traduceri</li></a>
+	<a href="despre-noi.html"><li>Despre noi</li></a>
+	<a href="portofoliu.html"><li>Portofoliu</li></a>
+	<a href="contact.html"><li>Contact</li></a>
+  </ul>
+ </div>
+ 
+<div id="banner">
+<ul>
+   <li style="background-image: url('images/contact.jpg'); background-size: 100% 100%">
+	<h1>Contact</h1>
+	<p>Comanzi simplu și rapid</p>
+  </li>
+</ul>
+</div>
+
+</header>
+
+<div id="content-contact-page">
+<div id="text">
+<p>Pentru orice</br>traducere</br>așteptăm</br>mesajul tău.</p>
+</div>
+
+<div id="contact-form">
+<form id="afiseaza" name="contactform" method="post" action="send_form_email.php">
+		<input type="text" name="name" placeholder="Nume*" class="name" required />
+		<input type="text" name="email" placeholder="Email*" class="email" type="email" required />
+		<textarea name="comments" rows="4" cols="50" placeholder="Mesaj*" class="message" required></textarea>
+		<input type="submit" class="btn" value="Trimite mesajul" />
+</form>
+</div>
+<div class="clear"></div>
+</div>
+
+ <a href="#" class="scrollup"></a>
+<footer>
+ <div id="terms"><a href="">Termeni și condiții</a><a href="contact.html">Contact</a> <a href="despre-noi.html">Despre noi</a>
+ </div>
+ <div id="tel"><p>(+4) 0742 222 222</p></div>
+ <div id="email"><a href="mailto:hello@enrotranslations.ro">hello@translations.ro</a></div>
+ <div id="socialmedia">
+   <a href="" rel="nofollow"><div class="facebook"></div></a>
+   <a href="" rel="nofollow"><div class="twitter"></div></a>
+   <a href="" rel="nofollow"><div class="google"></div></a>
+   <a href="" rel="nofollow"><div class="linkedin"></div></a>
+ </div>
+ <div id="copyright">Copyright ENROtranslations.ro | Toate drepturile rezervate | Designed by <a href="">cristina bratosin</a></div>
+</footer>
+<script type="text/javascript">
+$(function() {
+    $(".gal").jCarouselLite ({
+        btnNext: ".next",
+        btnPrev: ".prev",
+        btnGo: [".a", ".b", ".c", ".d", ".e"],
+        auto: 2000,
+        speed: 2000,
+        easing: "backout",
+        //vertical: true,
+        //circular: false,
+        //visible: 1,
+        //start: 2, 
+        //scroll: 3 
+    });
+}); 
+</script>
+<!--  unslider  !-->
+<script src="unslider.js"></script>
+<script type="text/javascript">
+    $(function() {
+    $('#banner').unslider({
+    speed: 600,               
+    delay: 6000,              
+    complete: function() {},  
+    keys: true,               
+    dots: true,              
+    fluid: true              
+});
+});
+</script>
+
+</body>
+</html>

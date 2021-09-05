@@ -1,0 +1,901 @@
+/*reset*/
+body, section { 
+text-align: center;
+font-family: 'Open Sans', sans-serif;
+letter-spacing: .2px;
+}
+* {
+margin: 0;
+padding: 0;
+-webkit-font-smoothing: antialiased;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+a {text-decoration:none}
+a img {border:none}
+li, ul {list-style: none}
+p, h1, h2, h3 {display: inline-block}
+header, section, article, footer {display: block}
+.clear {clear:both}
+/*header*/
+header {
+font-family: 'Quicksand', sans-serif;
+letter-spacing: .5px;
+}
+header a img {
+width: 10%;
+position: absolute;
+left: 40px;
+top: 20px;
+z-index:2;
+min-width: 150px;
+}
+header nav { 
+position: absolute;
+right: 40px;
+top: 20px;
+z-index:3;
+}
+header li { 
+float: left;
+background: transparent;
+}
+#menu li a:link, #menu li a:visited {
+color: #fff;
+font-size: 14px;
+line-height: 30px;
+padding: 10px;
+}
+#menu li a:hover, #menu li a:active { 
+border: 1px solid white;
+border-radius: 5px;
+background: rgba(7, 1, 10, .2)
+}
+#banner { 
+width: 100%;
+max-height: 450px;
+position: relative;
+overflow: auto;
+margin: auto;
+padding:0;
+font-size: 16px;
+line-height: 20px;
+color: #fff;
+text-shadow: #000 0px 0px 10px;
+}
+#banner ul{ 
+width: 100%;
+}
+#banner li { 
+display: block;
+float: left;
+width: 100%;
+padding-top: 170px;
+background-repeat: no-repeat;
+min-height:420px;
+}
+#banner h1, #banner h2 {
+font-size: 40px;
+line-height: 40px;
+width:100%;
+color: #fff;
+display: inline-block;
+}
+#banner p {
+font-size: 16px;
+line-height: 20px;
+padding-top: 15px;
+font-family: 'Open Sans', sans-serif;
+letter-spacing: 2px;
+display:block;
+}
+#banner a {
+display: inline-block;
+border: 2px solid #cfcfcf;
+margin-top: 50px;
+color: #fff;
+letter-spacing: 1px;
+}
+#banner a:link, #banner a:link {
+font-size: 15px;
+padding: 10px;
+border-radius: 5px;
+}
+#banner a:hover, #banner a:active {
+background: rgba(7, 1, 10, .2);
+}
+/*content*/
+#content {
+background: #f7f9f9;
+color: #243440;
+font-size: 13px;
+line-height: 25px;
+max-width:1400px;
+margin:auto;
+}
+.container {
+width:100%;
+max-width: 919px;
+display: block;
+margin: auto;
+padding:50px 0;
+}
+.container .description {
+width: 100%;
+max-width: 630px;
+padding: 50px;
+display: inline-block;
+float:left;
+text-align:left;
+}
+.container .description  h1, .container .description  h2 {
+color:#ff3c38;
+font-size: 45px;
+line-height:45px;
+padding-bottom: 20px;
+font-family: 'Quicksand', sans-serif;
+letter-spacing: .5px;
+}
+.container .description  p {
+padding-top: 25px;
+}
+.container img {
+width:100%;
+max-width: 289px;
+padding:50px;
+}
+.blue {
+background: #bed8d4;
+display: block;
+margin: auto;
+}
+.blue .container .description {
+float:right
+}
+.animated :hover{
+-webkit-transform: transform: rotate(-5deg);
+-moz-transform: transform: rotate(-5deg);
+-ms-transform: transform: rotate(-5deg);
+transform: rotate(-5deg);
+}
+#services {
+width: 100%;
+max-width: 964px;
+margin:auto;
+display: block;
+padding-bottom: 60px;
+}
+#services > p {
+color:#ff3c38;
+font-size: 45px;
+line-height:45px;
+padding: 100px 0 50px;
+font-weight: bold;
+display: block;
+font-family: 'Quicksand', sans-serif;
+letter-spacing: .5px;
+}
+#services article{
+position: relative;
+width: 33.333%;
+padding: 0 15px;
+margin: auto;
+float: left;
+}
+.services img {
+width: 25%;
+max-width: 100px;
+padding-right: 20px;
+opacity: .5;
+float: left;
+}
+.services img:hover{
+opacity: 1;
+}
+.services .serv  {
+width: 75%;
+float: right;
+text-align: left;
+}
+#services a:link, #services a:visited {
+color: #3f7caa;
+}
+#services a:hover, #services a:active {
+color: #ff3c38;
+}
+.serv h3 {
+margin-bottom: 15px;
+font-size: 20px;
+color: #3f7caa;
+font-family: 'Quicksand', sans-serif;
+letter-spacing: .5px;
+}
+.serv p {
+line-height: 22px;
+margin-bottom:40px;
+}
+#about {
+width: 100%;
+background: #3f7caa;
+display: block;
+margin: auto;
+position: relative;
+color: #fff;
+}
+#about h4 {
+font-size: 45px;
+line-height:45px;
+padding: 100px 0 20px;
+font-family: 'Quicksand', sans-serif;
+letter-spacing: .5px;
+}
+#about p:last-child {
+padding:0 0 100px;
+display: block;
+}
+.about p {
+display: block
+}
+#about .center {
+margin:auto;
+width:100%;
+max-width:798px;
+padding-top:20px;
+}
+#about .about{
+position: relative;
+width: 33.33%;
+padding: 0 20px;
+margin: auto;
+float: left;
+}
+.about img {
+width:100%;
+max-width:236px;
+opacity: .5;
+}
+.about img:hover {
+opacity: 1;
+}
+#client {
+width: 100%;
+display: block;
+margin: auto;
+padding: 100px;
+}
+#client h4 {
+font-size: 45px;
+line-height: 45px;
+color:#ff3c38;
+font-family: 'Quicksand', sans-serif;
+letter-spacing: .5px;
+}
+#client h5 {
+font-size: 30px;
+line-height: 10px;
+color:#ff3c38;
+font-family: 'Quicksand', sans-serif;
+letter-spacing: .5px;
+padding-bottom: 30px; 
+margin-top: -10px;
+padding-left: 330px;
+}
+#client p {
+padding: 0 10px 20px 0px;
+}
+.gal {
+margin: auto;
+position: relative;
+}
+.gal li img {
+padding: 10px;
+width:200px; 
+height:100px;
+}
+.prev, .next {
+position: absolute;
+z-index: 2;
+top: 25px;
+opacity:  .4;
+cursor:  pointer;
+}
+.prev {
+left: 5px;
+} 
+.next {
+right: 5px;
+} 
+.prev:hover, .next:hover {
+opacity: .8;
+}
+#contact-button {
+width: 300px;
+height: 60px;
+margin: auto;
+color: #ff3c38;
+border-radius: 2px;
+border: 2px solid #ff3c38;
+background: transparent;
+-webkit-transition-property: background;
+-moz-transition-property: background;
+transition-property: background;
+-webkit-transition-duration: 1s;
+-moz-transition-duration: 1s;
+transition-duration: 1s;
+font-family: 'Quicksand', sans-serif;
+letter-spacing: .5px;
+}
+#contact-button p {
+margin: auto;
+font-size: 28px;
+line-height:58px;
+}
+#contact-button:hover {
+background: #ff3c38;
+border: 2px solid #bed8d4;
+color: white;
+}
+#contact {
+padding: 100px 0;
+}
+#contact h4 {
+font-size: 45px;
+line-height: 45px;
+padding-bottom: 30px;
+color:#ff3c38;
+font-family: 'Quicksand', sans-serif;
+letter-spacing: .5px;
+}
+.ctc {
+max-width: 400px;
+margin:auto;
+padding: 0 15px 50px
+}
+.ctc a:link, .ctc a:visited {
+color: #ff3c38;
+}
+.ctc a:hover, .ctc a:active{
+text-decoration: underline
+}
+.scrollup {
+width: 50px;
+height: 50px;
+opacity: .1;
+position: fixed;
+bottom: 20px;
+right: 20px;
+background: url("images/prev.png") no-repeat;
+z-index: 999;
+-webkit-transform: transform: rotate(90deg);
+-moz-transform: transform: rotate(90deg);
+-ms-transform: transform: rotate(90deg);
+transform: rotate(90deg);
+}
+/*footer*/
+footer { 
+font-size: 15px;
+min-height: 30px;
+text-align: center;
+padding:10px;
+}
+#terms {
+color:#666;
+padding: 30px 0;
+}
+#terms  a{
+color:#666;
+border-right: 1px solid grey;
+padding: 0 5px 
+}
+#terms a:last-child {
+border-right: none
+}
+#copyright {
+color: #3f7caa;
+padding: 10px;
+}
+#tel, #email a:link, #email a:visited{
+color:#ff3c38;
+padding: 10px;
+}
+#email a:active, #email a:hover{
+color:#e00007;
+text-decoration: underline;
+}
+#tel p {
+display:inline-block;
+margin:auto;
+line-height: 31px;
+font-size: 16px;
+}
+#tel p::before{
+content: url("images/telephone.png");
+margin: 0 10px;
+}
+#email a::before{
+content: url("images/email.png");
+margin: 0 10px;
+}
+#socialmedia  div{
+width: 44px;
+height: 44px;
+display: inline-block;
+margin: 30px 10px;
+}
+#socialmedia .facebook{
+background: url("images/facebook.png") no-repeat;
+}
+#socialmedia .twitter{
+background: url("images/twitter.png") no-repeat;
+}
+#socialmedia .google{
+background: url("images/google-plus.png") no-repeat;
+}
+#socialmedia .linkedin{
+background: url("images/linkedin.png") no-repeat;
+}
+/* meniu mobil */
+#menu-mobile { 
+position: fixed;
+z-index: 99;
+top: 10px;
+right: 10px;
+width: 100%;
+max-width: 150px;
+}
+#menu-mobile ul { 
+width: 100%;
+}
+#menu-mobile li { 
+width: 100%;
+padding: 10px;
+line-height: 20px;
+font-size: 16px;
+border: 1px solid #bed8d4;
+position: relative;
+margin: 1px;
+float:right;
+display: block;
+background: #3f7caa;
+}
+#menu-mobile li:hover{ 
+background: #bed8d4;
+float: right;
+color: #ff3c38
+}
+#menu-mobile img {
+width: 100%;
+max-width: 49px;
+float: right;
+}
+#menu-mobile, #menu-mobile input, #menu-mobile ul { 
+display: none;
+}
+#menu-mobile a:link, #menu-mobile a:visited {
+color: white;
+}
+#menu-mobile a:hover, #menu-mobile a:active{
+color: #ff3c38;
+font-weight: bold;
+width: 150px;
+padding: 10px;
+}
+/* contact-page */
+#content-contact-page {
+background: #f7f9f9;
+display: block;
+color: #243440;
+font-size: 48px;
+line-height: 60px;
+max-width:1400px;
+margin:auto;
+border-bottom: 1px dotted #fff;
+}
+#text {
+width: 50%;
+text-align: right;
+padding:50px 10px;
+position: relative;
+display: inline-block;
+}
+#text > p {
+color: #3f7caa;
+padding: 20px;
+font-weight: bold;
+}
+#contact-form {
+width: 50%;
+padding:80px 10px 34px;
+background: #bed8d4;
+float:right;
+position: relative;
+}
+form {
+padding: 0 30px;
+max-width: 400px;
+font-family: 'Open Sans', sans-serif;
+}
+textarea{
+background: #f7f9f9 url no-repeat scroll 16px 16px; 
+width: 276px;
+height: 96px;
+border: 1px dotted #7eb1d8;
+display:block;
+font-size:16px;
+color:#3f7caa;
+overflow:hidden;
+font-family: 'Open Sans', sans-serif;
+padding-top: 10px;
+}
+input {
+width: 276px;
+height: 40px;
+border: 1px dotted #7eb1d8;
+display: block;
+font-size: 16px;
+line-height: 16px;
+color:#3f7caa;
+letter-spacing: .4px;
+}
+input[type=submit] {
+cursor:pointer;
+}
+input.name {
+background: #f7f9f9; 
+padding-left:15px;
+}
+input.email {
+background: #f7f9f9;
+padding-left:15px;
+}
+textarea.message {
+background: #f7f9f9;
+padding-left:15px;
+}
+input, textarea, .btn {
+margin-bottom: 20px;
+font-family: 'Open Sans', sans-serif;
+}
+::-webkit-input-placeholder {
+color: #ff3c38;
+}
+:-moz-placeholder{ 
+color: #3f7caa; 
+}
+::-moz-placeholder {
+color: #3f7caa;
+}
+:-ms-input-placeholder {  
+color: #f3f7caa; 
+}
+input:focus, textarea:focus { 
+background-color: rgba(0, 0, 0, .1);
+overflow: hidden; 
+}
+.btn {
+width: 81%;
+border: 1px solid #ff3c38;
+background: #ff3c38;
+padding: 10.5px 21px;
+color: #f7f9f9;
+}
+.btn:hover {
+border: 1px solid #bed8d4;
+background: #3f7caa;
+color: #fff;
+} 
+#red {
+width: 100%;
+font-size: 18px;
+background: #f7f9f9;
+border-top: 1px solid #bed8d4;
+}
+/* portofoliu -*/
+#subtitrari, #literatura, #tehnic, #medical, #interpretariat, #marketing, #website, #legislatie, #educatie{
+width: 286px;
+height: auto;
+margin: 10px;
+float: left;
+position: relative;
+padding: 100px 0 10px;
+}
+.wrapper-portofoliu{
+margin:auto;
+max-width:920px;
+padding: 100px 0;
+text-align: left;
+}
+.wrapper-portofoliu h3{
+font-size: 25px;
+color: #ff3c38;
+padding: 10px; 
+}
+.wrapper-portofoliu p{
+font-size: 12px;
+line-height: 20px;
+padding: 10px; 
+}
+#subtitrari {
+background:  #f7f9f9 url("images/subtitrari.jpg") no-repeat center top;
+background-size: 100% auto;
+}
+#literatura {
+background:  #f7f9f9 url("images/literatura.jpg") no-repeat center top;
+background-size: 100% auto;
+}
+#interpretariat{
+background:  #f7f9f9 url("images/interpretariat.jpg") no-repeat center top;
+background-size: 100% auto;
+}
+#tehnic{
+background:  #f7f9f9 url("images/tehnic.jpg") no-repeat center top;
+background-size: 100% auto;
+}
+#medical{
+background:  #f7f9f9 url("images/medical.jpg") no-repeat center top;
+background-size: 100% auto;
+}
+#marketing{
+background:  #f7f9f9 url("images/marketing.jpg") no-repeat center top;
+background-size: 100% auto;
+}
+#website{
+background:  #f7f9f9 url("images/website.jpg") no-repeat center top;
+background-size: 100% auto;
+}
+#legislatie {
+background:  #f7f9f9 url("images/ue.jpg") no-repeat center top;
+background-size: 100% auto;
+}
+#educatie {
+background:  #f7f9f9 url("images/educatie.jpg") no-repeat center top;
+background-size: 100% auto;
+}
+/* despre noi -*/
+#about-us{
+width: 100%;
+background: #f7f9f9;
+display: block;
+margin: auto;
+position: relative;
+color: #243440;
+font-size: 13px;
+line-height: 25px;
+}
+#about-us h4 {
+font-size: 45px;
+line-height:45px;
+color: #ff3c38;
+padding: 100px 0 20px;
+font-family: 'Quicksand', sans-serif;
+letter-spacing: .5px;
+}
+#about-us > p {
+text-align: left;
+padding: 20px
+}
+#about-us p{
+max-width: 700px;
+display: block;
+margin: auto;
+}
+#about-us .center {
+margin:auto;
+width:100%;
+max-width:798px;
+padding-bottom: 100px
+}
+#about-us .about{
+position: relative;
+width: 33.33%;
+padding: 10px;
+margin: auto;
+float: left;
+}
+.about img {
+width:100%;
+padding: 10px;
+}
+.ctc p, #client p {
+font-size: 13px;
+line-height: 25px;
+color: #243440;
+}
+
+@media screen and (max-width: 720px) { 
+header a img { 
+width: 10%;
+margin: auto;
+left: 20px; 
+top: 20px;
+}
+header nav { 
+position: absolute;
+right: 30px;
+top: 70px;
+z-index:3;
+}
+#services article{
+width: 100%;
+}
+#terms  a{
+color:#666;
+border-right: none;
+margin-right: 5px;
+}
+#text {
+width: 100%;
+max-width: 700px;
+text-align: right;
+padding:50px 10px;
+border-right: 1px dotted #ff3c38;
+position: relative;
+display: inline-block;
+}
+#contact-form {
+width: 100%;
+padding:80px 0px 16px;
+background: #bed8d4;
+float:right;
+position: relative;
+}
+.wrapper-portofoliu {
+margin:auto;
+width:100%;
+padding: 50px 10px;
+text-align: left;
+}
+#subtitrari, #literatura, #tehnic, #medical, #interpretariat, #marketing, #website, #legislatie, #educatie{
+width: 100%;
+max-width: 286px;
+float: left;
+margin: 10px;
+}
+#about-us .center {
+margin:auto;
+width:100%;
+max-width:798px;
+padding-bottom: 50px
+}
+}
+@media screen and (max-width: 480px) { 
+/* meniu mobil */
+#menu-mobile { 
+display: block;
+}
+#menu-mobile input:checked + ul { 
+display: block;
+}
+/* main - mobil */
+main { 
+float: none;
+width: 100%
+}
+.container {
+width: 100%;
+}
+.container div{
+float: none;
+width: 100%;
+}
+#services article{
+width: 100%;
+}
+main div {
+float:none;
+width:100%;}
+#about-us .about{
+width: 100%;
+}
+header img { 
+width: 100%;
+margin: auto;
+left: 20px; 
+top: 20px;
+}
+header nav { 
+display: none;
+}
+#banner li {
+display: block;
+padding-top: 100px;
+padding-bottom: 20px;
+min-height: 280px;
+}
+#banner h1 {
+font-size:20px;
+line-height:20px;
+}
+#banner p{
+font-size: 12px;
+width: 100%;
+margin: 0 auto;
+}
+#banner a{
+width: 200px;
+border: 1px solid white;
+border-radius: 5px;
+}
+.container img {
+width:50%;
+max-width: 289px;
+padding:20px;
+}
+.container .description {
+width: 100%;
+}
+#services > p, .container .description h2, .container .description h1, #about h4, #contact h4 , #about-us h4 {
+font-size: 38px;
+}
+.container .description h2, .container .description h1 {
+padding-bottom: 0px;
+}
+.container .description {
+padding: 20px; 
+}
+.services img {
+width: 20%;
+}
+.services .serv  {
+width: 80%;
+}
+.about img {
+width:60%;
+padding: 5px;
+}
+.about p{
+display:block
+}
+#about p:last-child {
+padding:0;
+}
+#about .center {
+margin:auto;
+width:100%;
+padding: 0 0 60px 0;
+}
+#about .about{
+width: 100%;
+padding: 10px;
+}
+#client {
+display: none;
+}
+#contact {
+padding: 50px 0;
+}
+#contact h4, #contact > p {
+padding: 0 0 15px;
+}
+#contact img {
+width: 60%;
+}
+#contact-button {
+width: 200px;
+display: block;
+}
+#contact-button p {
+margin: auto;
+font-size: 18px;
+}
+#terms a{
+display: block;
+padding-bottom: 7px;	
+}
+.wrapper-portofoliu {
+margin:auto;
+width:100%;
+padding: 50px 0;
+text-align: left;
+}
+#subtitrari, #literatura, #tehnic, #medical, #interpretariat, #marketing, #website, #legislatie, #educatie{
+width: 100%;
+max-width: 286px;
+float: none;
+margin: 10px auto;
+}
+#about-us h4 {
+padding: 50px 0 10px ; 
+}
+}
